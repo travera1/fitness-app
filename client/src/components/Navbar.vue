@@ -70,7 +70,12 @@ export default {
 </script>
 
 <style>
-     nav {
-        background: rgb(40, 1, 55) center / cover;
+     @media screen and (min-width: 25px) {
+    .navbar-item.is-hoverable:hover .navbar-dropdown {
+        display: block !important;
     }
+    .navbar-item.is-hoverable:focus-within .navbar-dropdown {
+        display: none;
+    }
+}
 </style>

@@ -12,7 +12,7 @@
               <h1 class="button column">MY ROUTINES</h1>
             </div>
             <div><br>
-              <p class="my-4 has-text-grey">Users who add friends lose more weight on average.</p>
+              <p class="my-4 has-text-grey"></p>
             </div>
           </div>
         </div>

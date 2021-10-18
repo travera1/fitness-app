@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const { PORT } = require('./config')
+const { PORT } = require('../config')
 const path = require('path')
 
 if (process.env.NODE_ENV === 'production') {

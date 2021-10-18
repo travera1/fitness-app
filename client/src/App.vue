@@ -12,6 +12,7 @@
         background: rgb(97, 38, 38) center / cover;
         //purple: rbg(40 1 55)
     }
+    
 </style>
 
 <script>

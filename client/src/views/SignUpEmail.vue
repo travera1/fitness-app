@@ -24,6 +24,18 @@
                   </span>
                 </div><br>
             </div>
+             <div class="field">
+                <label class="label  has-text-warning">What's your first name?</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Enter your first name.">
+                </div><br>
+            </div>
+             <div class="field">
+                <label class="label  has-text-warning">What's your last name?</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Enter your last name.">
+                </div><br>
+            </div>
             <div class="field">
                 <label class="label has-text-warning">Create a password</label>
                 <p class="control has-icons-left">

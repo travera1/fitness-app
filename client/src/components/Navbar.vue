@@ -48,10 +48,7 @@
         </div>
         <div class="navbar-end">
             <div class="navbar-item">
-                <div class="buttons">
-                    <router-link class="button is-info" :to="{ name: 'SignUp' }"><strong>Sign up</strong></router-link>
-                    <router-link class="button is-light" :to="{ name: 'LogIn' }"><strong>Log in</strong></router-link>
-                </div>
+                <login-badge/>
             </div>
         </div>
     </div><br><br>
@@ -59,13 +56,14 @@
 </template>
 
 <script>
+import LoginBadge from './LoginBadge.vue'
 export default {
+    components: { LoginBadge },
     data() {
         return {
             isActive: false
         }
     }
-    
 }
 </script>
 

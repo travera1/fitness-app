@@ -5,21 +5,29 @@ const session = {
     user: null,
     messages: [],
     toRoute: '/',
-    Login(email, password){
+    async Login(email, password){
 
-        const response = Login(email, password);
+        try{
+            const response = Login(email, password);
 
-        this.user = response.user;
+            this.user = response.user;
 
-        router.push(this.toRoute);
+            router.push(this.toRoute);
+        } catch (error){
+            this.Error(error)
+        }
+        
 
     },
-    
+    Error(error){
+        console.error(error)
+        const msg = error.msg ?? error
+        this.messages.push({ text: msg, type: 'warning'})
+
+    }
 };
 
-export function Logout() {
-    this.user = null;
-}
+
 
 export default session;
 
